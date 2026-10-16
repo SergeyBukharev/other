@@ -1,0 +1,7 @@
+.telegraph-actions{display:flex;align-items:center;flex-wrap:wrap;gap:12px}
+.telegraph-figure .sound-toggle{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-width:44px;padding-inline:12px;color:var(--muted)}
+.sound-toggle svg{flex:none}
+.sound-toggle .sound-muted{display:none}
+.sound-toggle[aria-pressed=false] .sound-waves{display:none}
+.sound-toggle[aria-pressed=false] .sound-muted{display:block}
+@media(max-width:520px){.telegraph-actions{gap:10px}.sound-toggle span{display:none}.telegraph-figure .sound-toggle{width:44px;padding:10px}}

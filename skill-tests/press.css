@@ -1,0 +1,20 @@
+:root{--paper:#fafaf8;--soft:#f0f1ec;--line:#e0e2da;--accent:#5a6550}
+.press-figure{background:#f7f8f4;border:0}
+#press-art{padding:0 30px;overflow:hidden}
+#press-art svg{width:100%;height:auto;max-height:650px;min-height:0;overflow:visible}
+.press-controls{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:8px 25px 18px}
+.press-actions{display:flex;gap:12px;flex-wrap:wrap}
+.press-actions button{display:flex;align-items:center;gap:24px;min-height:44px;padding:9px 14px;border:1px solid #d5d9ce;border-radius:5px;background:transparent;color:var(--ink);font-size:12px;transition:background-color .16s,opacity .16s,transform .16s}
+.press-actions button:first-child{background:#fff;border-color:#d0d5c6}
+.press-actions button:hover:not(:disabled){background:#e9eee1}
+.press-actions button:active:not(:disabled){transform:scale(.96)}
+.press-actions button:disabled{opacity:.5;cursor:default}
+.press-controls output{max-width:29ch;text-align:right;font-size:11px;color:var(--muted);font-variant-numeric:tabular-nums}
+.press-figure figcaption{border-top:1px solid #e5e7df;padding-top:16px}
+@media(max-width:800px){.press-controls{flex-direction:column;align-items:start;gap:14px}.press-controls output{text-align:left;max-width:100%}}
+@media(max-width:520px){#press-art{padding:0 4px}.press-controls{padding:6px 20px 18px}.press-actions{gap:9px}.press-actions button{gap:12px;font-size:10px;padding:8px 10px}.press-controls output{font-size:10px}.press-figure .figure-top{font-size:9px}}
+@media(prefers-reduced-motion:reduce){.press-actions button{transition:none}}
+@media print{.press-controls{display:none}.press-figure{background:white}.press-figure svg{max-height:400px}}
+
+.related-page{display:flex;align-items:center;justify-content:space-between;gap:25px;padding:28px 0 50px}.related-page>span{font-size:12px;color:var(--muted)}.related-page a{font-family:var(--serif);font-size:28px;text-decoration:none;min-height:44px;display:flex;align-items:center;gap:24px}@media(max-width:520px){.related-page{align-items:start;flex-direction:column;gap:8px;padding-bottom:35px}.related-page a{font-size:25px}}
+
